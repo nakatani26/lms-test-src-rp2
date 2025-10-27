@@ -144,7 +144,7 @@ public class Case05 {
 
 		//スクロール、待ち時間
 		scrollBy("window.innerHeight");
-		pageLoadTimeout(10);
+		pageLoadTimeout(5);
 
 		WebElement result = webDriver.findElement(By.className("mb10"));
 		assertEquals("Q.助成金書類の作成方法が分かりません", result.getText());
